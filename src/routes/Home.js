@@ -1,8 +1,7 @@
 import React from "react";
-import AddTodo from "./components/AddTodo";
-import TodoList from "./components/TodoList";
-import VisibilityFilters from "./components/VisibilityFilters";
-import "./styles.css";
+import AddTodo from "../containers/AddTodo";
+import TodoList from "../containers/TodoList";
+import VisibilityFilters from "../containers/VisibilityFilters";
 
 export default function TodoApp() {
   return (
