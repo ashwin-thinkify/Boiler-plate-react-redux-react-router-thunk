@@ -50,11 +50,9 @@
     font-family: "Mier demi";
     margin: 0px;
     padding: 0px;
-<<<<<<< HEAD
     cursor:pointer;
-=======
->>>>>>> 8d12214d66e4db77bfa3e768ca8c36cb9558f06c
 }
+
 .main-list-text-active{
     color: rgb(244, 51, 151);
     font-style: normal;

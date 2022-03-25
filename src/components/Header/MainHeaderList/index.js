@@ -7,6 +7,7 @@ function MainHeaderList({ list }) {
   const [activeId, setActiveId] = useState("-1");
 
     const activate = useCallback((e,id) => {
+      e.stopPropagation();
       console.log(e,id);
       if(id){
         setActiveId(id.toString());
@@ -18,7 +19,8 @@ function MainHeaderList({ list }) {
       }
   }, []);
 
-  const deActivate = useCallback(() => {
+  const deActivate = useCallback((e) => {
+    e.stopPropagation();
     setActiveId('-1');
   }, []);
 

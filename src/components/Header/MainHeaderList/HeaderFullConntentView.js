@@ -2,15 +2,9 @@ import React from "react";
 import cx from 'classnames';
 import "../../Header/Header.css";
 
-<<<<<<< HEAD
 function HeaderFullConntentView({ data, activate, id }) {
   return (
     <div className={"header-full-content-view"} onMouseEnter={ e => activate(e, id)} >
-=======
-function HeaderFullConntentView({ data }) {
-  return (
-    <div className={"header-full-content-view"}>
->>>>>>> 8d12214d66e4db77bfa3e768ca8c36cb9558f06c
       <div className={"nav-bar-list-content"}>
         {data.children.map((item,ind) => {
           return (
