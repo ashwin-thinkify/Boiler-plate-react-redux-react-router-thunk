@@ -1,4 +1,4 @@
-import { MAKE_SANDWICH,APOLOGIZE } from "../sandwich/actionTypes";
+import { MAKE_SANDWICH,APOLOGIZE } from "../slices/sandwich/actionTypes";
 
 const initialState = [];
 

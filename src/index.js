@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './redux/store'
 import { Provider } from 'react-redux'
-import { makeASandwichWithSecretSauce } from './redux/sandwich/action';
+import { makeASandwichWithSecretSauce } from './redux/slices/sandwich/action';
 
 store.dispatch(makeASandwichWithSecretSauce('My partner')).then(() => {
   console.log('Done!')

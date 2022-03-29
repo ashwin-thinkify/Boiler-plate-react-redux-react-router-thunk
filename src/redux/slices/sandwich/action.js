@@ -1,5 +1,5 @@
 // import {fetchSecretSauce} from '../../services/food.services';
-import api from '../../utils/api'
+import api from '../../../utils/api'
 
 function makeASandwich(forPerson, secretSauce) {
     return {
