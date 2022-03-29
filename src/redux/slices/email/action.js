@@ -3,15 +3,15 @@ import api from '../../../utils/api'
 
 function makeASandwich(forPerson, secretSauce) {
     return {
-      type: 'MAKE_SANDWICH',
+      type: 'GET_EMAILS',
       forPerson,
       secretSauce
     }
   }
   
-  function apologize(fromPerson, toPerson, error) {
+  function GET_EMAILS_ERROR(fromPerson, toPerson, error) {
     return {
-      type: 'APOLOGIZE',
+      type: 'GET_EMAILS_ERROR',
       fromPerson,
       toPerson,
       error
@@ -30,7 +30,7 @@ export function makeASandwichWithSecretSauce(forPerson) {
             const emails = await api.get("/");
             dispatch(makeASandwich(forPerson, emails.data));
         } catch (error) {
-            dispatch(apologize('The Sandwich Shop', forPerson, error))
+            dispatch(GET_EMAILS_ERROR('The Sandwich Shop', forPerson, error))
         }
       }
     }
