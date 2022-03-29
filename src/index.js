@@ -5,6 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './redux/store'
 import { Provider } from 'react-redux'
+import { makeASandwichWithSecretSauce } from './redux/slices/email/action';
+
+store.dispatch(makeASandwichWithSecretSauce('My partner')).then(() => {
+  console.log('Done!')
+})
 
 
 ReactDOM.render(
