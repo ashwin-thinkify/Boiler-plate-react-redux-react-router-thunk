@@ -1,5 +1,4 @@
-// import {fetchSecretSauce} from '../../services/food.services';
-import api from '../../../utils/api'
+import {gerAllInitialEmails} from '../../../services/email.services';
 
 function makeASandwich(forPerson, secretSauce) {
     return {
@@ -27,7 +26,7 @@ export function makeASandwichWithSecretSauce(forPerson) {
     return async function saveNewTodoThunk(dispatch, getState) {
         // ✅ Now we can use the text value and send it to the server
         try {
-            const emails = await api.get("/");
+            const emails = await gerAllInitialEmails();
             dispatch(makeASandwich(forPerson, emails.data));
         } catch (error) {
             dispatch(GET_EMAILS_ERROR('The Sandwich Shop', forPerson, error))
